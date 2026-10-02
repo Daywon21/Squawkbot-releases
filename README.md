@@ -30,6 +30,7 @@ SquawkBot checks this repository for new **SquawkBot-Setup.exe** releases. Use *
 ## Support
 
 - [Release notes & downloads](https://github.com/Daywon21/Squawkbot-releases/releases)
+- [Privacy policy](privacy.html)
 - Source and development: private repository (not public)
 
 © Captain Dark. Proprietary software.

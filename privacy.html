@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vega (SquawkBot) — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; line-height: 1.5; max-width: 44rem; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+    .muted { opacity: 0.75; font-size: 0.95rem; }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+  <h1>Vega (SquawkBot) — Privacy Policy</h1>
+  <p class="muted">Effective date: October 2, 2026 · Product: Vega, the SquawkBot desktop app for Windows</p>
+
+  <p>
+    Vega (SquawkBot) is desktop software that runs on your computer. It connects your streaming
+    accounts so you can run chat, alerts, and OBS from one app. This policy describes what the
+    app accesses and where that data stays.
+  </p>
+
+  <h2>Who controls the data</h2>
+  <p>
+    You run the app locally. Account tokens and settings are stored on your PC under your user
+    profile in the <code>.squawkbot</code> folder. We do not operate a Vega or SquawkBot cloud
+    account that receives your live chat.
+  </p>
+
+  <h2>Data we access (YouTube / Google)</h2>
+  <p>When you connect YouTube, the app may access:</p>
+  <ul>
+    <li>Your Google account email, name, and profile, to show which account is connected</li>
+    <li>Your YouTube channel id and channel name</li>
+    <li>Your live broadcasts and live chat, to show chat and run bot features while you are live</li>
+    <li>Permission to send live chat messages the bot or you post</li>
+  </ul>
+  <p>
+    The app requests
+    <code>openid</code>,
+    <code>userinfo.email</code>,
+    <code>userinfo.profile</code>,
+    <code>youtube.readonly</code>, and
+    <code>youtube.force-ssl</code>.
+    Live chat can also be read from YouTube’s public watch page (Innertube) for the broadcast you are on.
+    The app does not read your private videos, playlists, or Google Drive.
+  </p>
+
+  <h2>Other connections</h2>
+  <ul>
+    <li><strong>Twitch.</strong> Broadcaster and bot logins, chat, and EventSub, so chat and alerts work in the app and OBS.</li>
+    <li><strong>Kick.</strong> Account login and chat for the channel you connect.</li>
+    <li><strong>OBS.</strong> A local WebSocket connection on your PC (default <code>127.0.0.1:4455</code>) to control scenes and browser sources. That traffic stays on your machine.</li>
+  </ul>
+
+  <h2>How data is used</h2>
+  <ul>
+    <li>Show and send live chat while you are streaming</li>
+    <li>Run alerts, goals, and overlays in OBS</li>
+    <li>Keep you signed in on this PC until you log out</li>
+  </ul>
+  <p>We do not sell Google, YouTube, Twitch, or Kick data. We do not use it for advertising.</p>
+
+  <h2>Storage and retention</h2>
+  <ul>
+    <li>Tokens and settings stay in the <code>.squawkbot</code> folder on your PC until you log out or delete that folder</li>
+    <li>Chat shown in the app is processed on your PC. It is not uploaded to a Vega or SquawkBot server</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Log out of YouTube, Twitch, or Kick inside the app</li>
+    <li>Remove Vega / SquawkBot from your Google account:
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+    <li>Delete local app data by deleting the <code>.squawkbot</code> folder in your user profile</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Vega (SquawkBot) is intended for streamers and is not directed at children under 13.</p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: open an issue on
+    <a href="https://github.com/Daywon21/Squawkbot-releases">Daywon21/Squawkbot-releases</a>.
+  </p>
+</body>
+</html>
